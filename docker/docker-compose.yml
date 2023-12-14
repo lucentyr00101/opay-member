@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  opayant_member:
+    build: ../
+    container_name: 'opayant_member'
+    volumes:
+      - opayant-dist:/code/dist
+
+volumes:
+  opayant-dist:

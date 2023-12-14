@@ -1,0 +1,112 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.pre {
+  margin: 12px 0;
+  padding: 12px 20px;
+  background: @input-bg;
+  box-shadow: @card-shadow;
+}
+
+.errorMessage {
+  color: rgb(225, 39, 39);
+}
+
+.paymentCard {
+  box-sizing: border-box !important;
+  max-width: 536px;
+  height: 135px;
+  margin: auto !important;
+  padding: 14px 16px !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:not(:last-child) {
+    margin-bottom: 38px !important;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  img {
+    width: 106px;
+    height: 106px;
+  }
+
+  h3 {
+    display: inline;
+    margin-left: 45px;
+  }
+}
+
+.paymentContainer {
+  margin-top: 24px;
+}
+
+.paymentLabel {
+  display: block;
+  margin-bottom: 32px;
+  margin-left: 46px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 800;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.formInput {
+  max-width: 368px;
+}
+
+.mb22 {
+  margin-bottom: 22px;
+}
+
+.mt96 {
+  margin-top: 96px;
+}
+
+.formTitle {
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 29px;
+}
+
+.forgotPassword {
+  color: #1890ff !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #1978d1;
+  }
+}
+
+.buttonLrg {
+  width: 150px;
+  height: 58px;
+  border-radius: 9px;
+}
+
+.mr19 {
+  margin-right: 19px;
+}
+
+@media screen and (max-width: 450px) {
+  .captchaWrapper {
+    margin-top: 20px;
+  }
+}
+
+.paymentTypeLogo {
+  width: 106px;
+  height: 106px;
+  object-fit: contain;
+  border-radius: 22px;
+}

@@ -1,0 +1,55 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.detailsContainer {
+  padding: 80px;
+  :global {
+    .ant-typography-copy {
+      float: right;
+    }
+  }
+  .notice {
+    color: #e12727;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    &-highlight {
+      color: #1890ff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .detail-header {
+    display: block;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+  }
+  .divider {
+    border-color: #a6aaae;
+    border-width: 2px 0 0;
+  }
+  .actions {
+    max-width: 393px;
+    margin: auto;
+    margin-top: 120px;
+    .button {
+      width: 100%;
+      height: 58px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      border-radius: 9px;
+    }
+  }
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 450px) {
+  .detailsContainer {
+    padding: 10px 0;
+  }
+}

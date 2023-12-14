@@ -1,0 +1,131 @@
+@import (reference) '~antd/es/style/themes/index';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.avatarImage {
+  // width: 8vw !important;
+  max-width: 40px;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.action {
+  padding-right: 0px !important;
+  img {
+    width: 8vw;
+    max-width: 36px;
+    height: auto;
+  }
+}
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+  li:hover {
+    background: #e6f7ff;
+  }
+  .menuText {
+    color: #001529;
+    font-weight: 500;
+    font-size: 15px;
+    &.signOut {
+      color: #e12727;
+    }
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  height: 48px;
+  margin-left: auto;
+  overflow: hidden;
+  .action {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    > span {
+      vertical-align: middle;
+    }
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+  .search {
+    padding: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    .avatar {
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: red;
+    }
+  }
+}
+
+.dark {
+  .action {
+    &:hover {
+      background: #252a3d;
+    }
+    &:global(.opened) {
+      background: #252a3d;
+    }
+  }
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 86px;
+}
+
+.headerTitle {
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: ~'min(36px, 6vw)';
+  line-height: 42px;
+}
+
+.dropdownContent {
+  max-width: 170px;
+  background: #000;
+}
+
+@media only screen and (max-width: @screen-md) {
+  :global(.ant-divider-vertical) {
+    vertical-align: unset;
+  }
+  .name {
+    display: none;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    .account {
+      .avatar {
+        margin-right: 0;
+      }
+    }
+    .search {
+      display: none;
+    }
+  }
+}

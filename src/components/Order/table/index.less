@@ -1,0 +1,75 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.details {
+  color: #1890ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/deep/ .ant-pagination-item-active {
+  color: #fff;
+  background: #1890ff !important;
+}
+
+.detailsContainer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 610px;
+  margin: auto;
+  padding: 29px 39px;
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+}
+
+.detailsLabel {
+  display: inline-block;
+  width: 150px;
+  color: #5e5e5e;
+  /* identical to box height */
+
+  color: #5e5e5e;
+
+  font-weight: 500;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14px;
+}
+
+.details {
+  &:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+
+.copyBtn {
+  margin-left: 8px;
+  color: #1890ff;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.detailsValue {
+  display: inline;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 500;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14px;
+}
+
+.smallFont {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14px;
+}
+
+.noMargin {
+  margin-left: 0;
+}

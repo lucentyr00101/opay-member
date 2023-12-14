@@ -1,0 +1,150 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.detailsContainer {
+  margin: 50px 0 35px 0;
+}
+
+.detailsTitle {
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 29px;
+  text-align: center;
+}
+
+.mr {
+  margin-right: 20px;
+}
+
+.detailsLabel {
+  display: inline-block;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.detailsWrapper {
+  display: block;
+  margin: 0 76px;
+}
+
+.details {
+  &:not(:last-of-type) {
+    margin-bottom: 34px;
+  }
+}
+
+.copyBtn {
+  margin-left: 8px;
+  color: #1890ff;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.detailsValue {
+  display: inline;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 18px;
+}
+
+.detailsValuePrice {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.detailsNote {
+  margin-top: 37px;
+  margin-bottom: 17px;
+  padding: 0 65px;
+  color: #e12727;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.detailsDivider {
+  display: block;
+  margin: 0 47px 44px 47px;
+
+  border-top: 2px dashed #a6aaae;
+}
+
+.detailsBankLabel {
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.actions {
+  max-width: 393px;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.button {
+  width: 100%;
+  height: 58px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 9px;
+}
+
+.buttonActions {
+  width: 176px;
+  height: 58px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 9px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 450px) {
+  .detailsWrapper {
+    margin: 0px;
+  }
+  .detailsNote {
+    padding: 0px;
+  }
+  .buttonActions {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .details {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .detailsLabel {
+    width: 180px;
+  }
+}

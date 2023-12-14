@@ -1,0 +1,127 @@
+@import '~antd/es/style/variable.less';
+// fonts
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+html {
+  font-size: 36px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ant-avatar.ant-avatar-circle.ant-avatar-image.responsiveAvatar {
+  width: 8vw !important;
+  max-width: 36px !important;
+  height: auto !important;
+  max-height: 36px !important;
+}
+
+.colorWeak {
+  filter: invert(80%) !important;
+}
+
+.ant-layout {
+  min-height: calc(100vh - 86px) !important;
+  background-color: #fff !important;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset !important;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre !important;
+        > span {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: calc(100vh - 86px);
+  }
+}
+
+.ant-layout-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 86px !important;
+  background-color: #fff !important;
+}
+
+.ant-pro-global-header {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 744px !important;
+  height: 100% !important;
+  background-color: #00101e !important;
+}
+
+.ant-layout-content {
+  width: 100% !important;
+  max-width: 744px !important;
+  min-height: calc(100vh - 86px) !important;
+  margin: auto !important;
+  padding: 10px;
+  background-color: #f0f2f5 !important;
+}
+
+@media all and (max-width: 400px) {
+  .ant-pro-global-header {
+    padding: 0 10px !important;
+  }
+}

@@ -1,0 +1,52 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.amountsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 21px;
+}
+
+.amountBtn {
+  box-sizing: border-box;
+
+  min-width: 190px;
+  padding: 24px;
+
+  color: #0052b4;
+  font-weight: 700;
+  font-size: 0.7rem;
+  font-style: normal;
+  line-height: 35px;
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #fff;
+    background-color: #1890ff;
+  }
+}
+
+.selected {
+  color: #fff;
+  background-color: #1890ff;
+}
+
+@media screen and (max-width: 450px) {
+  .amountBtn {
+    min-width: 175px;
+    font-size: 0.5rem;
+  }
+
+  .amountsContainer {
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+}
